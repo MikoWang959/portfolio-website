@@ -1,0 +1,5 @@
+.informational-page .project-info h1{font-size:clamp(56px,6vw,78px);line-height:1.02}
+.informational-page .project-section-head .kicker{margin-bottom:13px}
+.informational-page .informational-gallery{grid-template-columns:minmax(0,1fr)}
+@media(max-width:900px){.informational-page .project-info h1{font-size:clamp(48px,6.5vw,60px)}}
+@media(max-width:680px){.informational-page .project-info h1{font-size:clamp(46px,12vw,74px)}}

@@ -1,0 +1,8 @@
+.adventure-page .project-info h1{font-size:clamp(58px,6.35vw,85px);line-height:1.02}
+.adventure-page .adventure-gallery{grid-template-columns:minmax(0,1fr)}
+.award-block{margin-top:22px}
+.award-list{list-style:none;padding:0;margin:0}
+.award-list a{font:13px/1.45 var(--mono);color:var(--ink);text-decoration:none}
+.award-list a:hover{color:var(--accent)}
+@media(max-width:900px){.adventure-page .project-info h1{font-size:clamp(56px,7vw,78px)}}
+@media(max-width:680px){.adventure-page .project-info h1{font-size:clamp(52px,14vw,88px)}}

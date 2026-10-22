@@ -1,0 +1,28 @@
+.contact-main{padding:0 var(--pad) clamp(40px,5vw,64px)}
+.contact-hero,.contact-grid{position:relative;z-index:1}
+.contact-hero{isolation:isolate}
+.contact-hero::before{content:"";position:absolute;inset:0 calc(var(--pad)*-1);z-index:0;pointer-events:none;opacity:.72;background-image:radial-gradient(ellipse 48% 72% at 18% 24%,rgba(139,21,64,.18),transparent 72%),radial-gradient(ellipse 44% 64% at 82% 70%,rgba(214,116,140,.19),transparent 74%),radial-gradient(ellipse 40% 58% at 56% 18%,rgba(235,194,151,.15),transparent 76%);background-size:155% 150%,150% 160%,160% 150%;background-position:0% 0%,100% 90%,35% 30%;animation:contact-waterflow 24s ease-in-out infinite alternate}
+.contact-hero{min-height:calc(100svh - 78px);display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 clamp(44px,7vh,72px);border-bottom:0}
+.contact-hero h1{position:relative;z-index:1;font:clamp(76px,14.3vw,190px)/1.02 var(--display);letter-spacing:-.025em;margin:0;max-width:1200px}
+.contact-hero h1 em{font-style:normal;color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:1.5px var(--ink);transition:color .25s,-webkit-text-stroke-color .25s}
+.contact-hero h1:hover em{-webkit-text-fill-color:var(--accent);-webkit-text-stroke-color:var(--accent)}
+
+.contact-grid{display:block;padding-top:clamp(48px,7vw,88px)}
+.contact-details{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.15fr);grid-template-rows:repeat(3,minmax(110px,auto));column-gap:clamp(28px,6vw,88px);align-items:stretch}
+.contact-detail{display:flex;flex-direction:column;align-items:flex-start;min-height:110px;padding:15px 0 20px;margin:0;border-top:1px solid var(--line)}
+.contact-detail>p:not(.kicker){margin:12px 0 0;font:20px/1.4 var(--font)}
+.contact-detail>a,.contact-socials a{display:inline-flex;align-items:center;gap:13px;color:var(--ink);text-decoration:none;font:20px/1.45 var(--font);margin-top:12px;transition:color .2s}
+.contact-detail a:hover,.contact-socials a:hover{color:var(--accent)}
+.contact-detail a span,.contact-socials a span{font:18px var(--font)}
+.contact-socials{display:flex;flex-wrap:wrap;gap:12px clamp(24px,3vw,46px)}
+.mentor-link{grid-column:2;grid-row:1/4;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:24px;min-height:100%;padding:15px 0 20px;margin:0;border:0;border-top:1px solid var(--line);background:transparent;color:var(--ink);text-decoration:none;transition:color .2s,border-color .2s}
+.mentor-link .kicker{margin:0;color:var(--ink)}
+.mentor-link strong{display:flex;justify-content:space-between;align-items:center;gap:20px;font:clamp(42px,6.1vw,88px)/.98 var(--display);text-transform:uppercase}
+.mentor-link strong span{font:clamp(24px,3vw,36px) var(--font);transition:transform .2s}
+.mentor-link:hover{background:transparent;border-color:var(--accent);color:var(--accent)}.mentor-link:hover .kicker{color:var(--accent)}.mentor-link:hover strong span{transform:translate(4px,-4px)}
+.contact-page footer{margin-top:0}
+@media(max-width:760px){.contact-hero h1{font-size:clamp(68px,15vw,120px)}.contact-details{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:24px;grid-template-rows:repeat(3,minmax(105px,auto))}.contact-detail{min-height:105px}.mentor-link{grid-column:2;grid-row:1/4;padding:26px}}
+@media(max-width:560px){.contact-main{padding:0 20px 40px}.contact-hero{min-height:calc(100svh - 78px);padding-bottom:44px}.contact-hero h1{font-size:clamp(58px,15vw,82px);line-height:1.03}.contact-details{grid-template-columns:1fr;grid-template-rows:auto;row-gap:0}.contact-detail{min-height:auto;margin-bottom:16px;padding:15px 0 24px}.contact-socials{gap:12px 32px}.mentor-link{grid-column:1;grid-row:auto;min-height:250px;gap:40px;padding:24px}.mentor-link strong{font-size:clamp(38px,11vw,58px)}.contact-socials a,.contact-detail>a{font-size:19px}}
+@keyframes contact-waterflow{0%{background-position:0% 0%,100% 90%,35% 30%}50%{background-position:60% 35%,35% 0%,100% 85%}100%{background-position:100% 80%,0% 15%,10% 100%}}
+html[data-theme="dark"] .contact-hero::before{opacity:.82;background-image:radial-gradient(ellipse 48% 72% at 18% 24%,rgba(139,21,64,.3),transparent 72%),radial-gradient(ellipse 44% 64% at 82% 70%,rgba(214,116,140,.2),transparent 74%),radial-gradient(ellipse 40% 58% at 56% 18%,rgba(235,194,151,.12),transparent 76%)}
+@media(prefers-reduced-motion:reduce){.contact-hero::before{animation:none}.contact-hero h1 em,.contact-detail a,.contact-socials a,.mentor-link strong span{transition:none}}

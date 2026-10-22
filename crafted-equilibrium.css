@@ -1,0 +1,7 @@
+.crafted-page .crafted-gallery{grid-template-columns:minmax(0,1fr)}
+.award-block{margin-top:22px}
+.award-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.award-list a{font:13px/1.45 var(--mono);color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.award-list a:hover{color:var(--accent);border-color:currentColor}
+@media(max-width:680px){.award-list a{font-size:12px}}
+.video-gallery{display:block}

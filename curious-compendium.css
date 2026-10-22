@@ -1,0 +1,6 @@
+.curious-page .project-info h1{font-size:clamp(56px,6.7vw,88px);line-height:.98}
+.curious-page .project-section-head .kicker{margin-bottom:13px}
+.curious-page .curious-gallery{grid-template-columns:minmax(0,1fr)}
+.curious-page .curious-gallery .gallery-item{margin:0}
+@media(max-width:900px){.curious-page .project-info h1{font-size:clamp(52px,7vw,68px)}}
+@media(max-width:680px){.curious-page .project-info h1{font-size:clamp(48px,11vw,68px)}}

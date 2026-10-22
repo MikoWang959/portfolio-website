@@ -1,0 +1,4 @@
+.echo-page .echo-gallery{grid-template-columns:minmax(0,1fr)}
+.echo-video-gallery{display:block}
+
+.info-block .project-credit{margin-top:12px;color:var(--muted);font:13px/1.5 var(--mono)}
